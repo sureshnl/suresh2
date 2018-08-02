@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body><center>
+    <h2>VIDEO FILE</h2>
+
+    <video src="movie.mp4" loop autoplay controls width="320" height="240"  id="video1">
+
+  Your browser does not support the video tag.
+</video>
+<br>
+<button type="button" onClick="Play()">Play</button>
+<button type="button" onClick="Pause()">Pause</button>
+<script type="text/javascript">
+    function Play()
+    {
+        var
+        myVideo=document.getElementById('video1');
+                      myVideo.Play();
+        }
+        function Pause()
+        {
+            var
+             myVideo=document.getElementById('video1');
+                          myVideo.Pause();
+
+            }
+
+</script>
+<br><br>
+
+<h2>AUDIO FILE</h2>
+<audio src="★ Kaththi - Title Card _ BGM ★.mp3" autoplay controls id="ado">
+  audio not supported
+</audio><br>
+
+<button type="button" onClick="Play()">Play</button>
+<button type="button" onClick="Pause()">Pause</button>
+
+<script type="text/javascript">
+    function Play()
+    {
+        var
+        myAudio=document.getElementById('ado');
+                      myVideo.Play();
+        }
+        function Pause()
+        {
+            var
+             myAudio=document.getElementById('ado');
+                          myVideo.Pause();
+
+            }
+
+</script>
+</center>
+
+  </body>
+</html>

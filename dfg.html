@@ -1,0 +1,30 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>Java Script</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        function Play()
+        {
+            var myVideo = document.getElementById("Video1");
+            if(myVideo.paused)
+            {
+                myVideo.play();
+                //document.getElementById("play").innerHTML="Pause";
+            }
+            else
+            {
+               myVideo.pause();
+               //document.getElementById("Pause").innerHTML="Play";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onClick="Play()">Play/Pause</button>
+    <video width="320" height="240" id="Video1">
+        <source src="Simple%20Plan%20-%20Last%20One%20Standing%20(Lyric%20V%C3%ADdeo).mov" type="video/mov">
+        <source src="Simple%20Plan%20-%20Last%20One%20Standing%20(Lyric%20V%C3%ADdeo).mp4" type="video/mp4">
+    </video>
+</body>
+</html>
