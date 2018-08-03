@@ -5,59 +5,58 @@
     <title></title>
 
   </head>
-  <body><center>
-    <h2>VIDEO FILE</h2>
+  <body>
+    <center>
+    <h1><u>VIDEO FILE</u></h21><br>
 
-    <video src="movie.mp4" loop autoplay controls width="320" height="240"  id="video1">
-
-  Your browser does not support the video tag.
-</video>
+    <video   width="320" height="240" autoplay controls id="video">
+    <source src="movie.mp4" type="video/mp4">
+   </video>
 <br>
-<button type="button" onClick="Play()">Play</button>
-<button type="button" onClick="Pause()">Pause</button>
-<script type="text/javascript">
-    function Play()
-    {
-        var
-        myVideo=document.getElementById('video1');
-                      myVideo.Play();
-        }
-        function Pause()
-        {
-            var
-             myVideo=document.getElementById('video1');
-                          myVideo.Pause();
+<button type="button" name="button" onclick="play()">Play</button>
+<button type="button" name="button" onclick="pause()">Pause</button>
 
-            }
-
-</script>
-<br><br>
-
-<h2>AUDIO FILE</h2>
+<h1><u>AUDIO FILE</u></h1><br>
 <audio src="★ Kaththi - Title Card _ BGM ★.mp3" autoplay controls id="ado">
   audio not supported
 </audio><br>
+<button type="button" name="button" onclick="play1()">Play</button>
+<button type="button" name="button" onclick="pause1()">Pause</button>
 
-<button type="button" onClick="Play()">Play</button>
-<button type="button" onClick="Pause()">Pause</button>
 
+</body>
 <script type="text/javascript">
-    function Play()
+    function play1()
     {
         var
-        myAudio=document.getElementById('ado');
-                      myVideo.Play();
+        aid=document.getElementById('ado');
+        aid.play();
+    }
+   function pause1()
+   {
+      var
+     aid=document.getElementById('ado');
+       aid.pause();
+    }
+
+</script>
+
+<script type="text/javascript">
+    function play()
+    {
+        var
+        my=document.getElementById('video');
+                      my.play();
         }
-        function Pause()
+        function pause()
         {
             var
-             myAudio=document.getElementById('ado');
-                          myVideo.Pause();
+             my=document.getElementById('video');
+                          my.pause();
 
             }
 
 </script>
-</center>
 
-  </body>
+
 </html>
